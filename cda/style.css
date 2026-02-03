@@ -235,3 +235,44 @@ footer {
     text-align: center;
   }
 }
+.founder {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin-top: 2rem;
+  flex-wrap: wrap;
+}
+
+.founder img {
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border: 2px solid var(--accent);
+}
+
+.founder-info {
+  max-width: 720px;
+}
+
+.founder-info a {
+  color: var(--accent);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.founder-info a:hover {
+  text-decoration: underline;
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .founder {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .founder-info {
+    max-width: 100%;
+  }
+}
