@@ -6,3 +6,9 @@ document.querySelectorAll('a[href^="#"]').forEach(link => {
       .scrollIntoView({ behavior: "smooth" });
   });
 });
+const hamburger = document.querySelector('.hamburger');
+const navMenu = document.querySelector('.nav-menu');
+
+hamburger.addEventListener('click', () => {
+  navMenu.classList.toggle('active');
+});
