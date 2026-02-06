@@ -200,12 +200,14 @@ body, html {
 }
 
 .founder img {
-  width: 140px;
-  height: 140px;
+  width: 240px;
+  height: 240px;
   border-radius: 50%;
-  object-fit: cover;
+  object-fit: contain;
   border: 3px solid var(--accent);
+  background-color: #fff; /* optional, avoids transparency gaps */
 }
+
 
 .founder-info {
   max-width: 650px;
